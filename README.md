@@ -60,10 +60,12 @@ To use the script, you need your own Zoom API credentials:
    - Account ID
    - Client ID
    - Client Secret
-7. Go to "Scopes" and add these permissions:
-   - `/meeting:read:admin`
-   - `/meeting:write:admin`
-   - `/recording:write:admin`
+7. Go to "Scopes" and click "select all user permissions" for the following prefixes:
+   - `user:read`
+   - `meeting:read`
+   - `meeting:write`
+   - as well as all scopes under **view and manage all user meetings**
+   - ***Note:*** *this list is overly permissive, but this is the easiest way to get up & running*
 8. Make sure your app is activated (toggle switch is ON)
 
 ### 5. Configure Environment Variables
